@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #2b0040, #000);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.4);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.4), 0 0 25px rgba(6, 182, 212, 0.2);
+    border: 2px solid rgba(6, 182, 212, 0.6);
+}
+
+
+h1 {
+    font-size: 28px;
+    color: #fff;
+    margin: 10px 0 5px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #a020f0;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #a020f0;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #a020f0;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+    margin-top: 30px;
+}
+
+.hire-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(160, 32, 240, 0.5);
+}
+
+/* Email Button */
+.hire-btn.email {
+    background: #a020f0;
+    color: #fff;
+}
+
+.hire-btn.email:hover {
+    background: #fff;
+    color: #a020f0;
+    box-shadow: 0 0 25px rgba(160, 32, 240, 0.9);
+}
+
+/* WhatsApp Button */
+.hire-btn.whatsapp {
+    background: #25d366;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+}
+
+.hire-btn.whatsapp:hover {
+    background: #fff;
+    color: #25d366;
+    box-shadow: 0 0 25px rgba(37, 211, 102, 0.9);
+}
