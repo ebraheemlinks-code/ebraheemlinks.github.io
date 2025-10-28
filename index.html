@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ebraheemlinks — Ibrahim Atiku Halliru</title>
+    <style>
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --muted: #9aa4b2;
+            --accent: #06b6d4;
+            --glass: rgba(255, 255, 255, 0.04)
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Inter, system-ui, Arial, sans-serif;
+            background: linear-gradient(180deg, #061021 0%, #071426 100%);
+            color: #e6eef6;
+            margin: 0;
+            line-height: 1.5
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 24px auto;
+            padding: 20px
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #06b6d4, #7c3aed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin: 0 8px;
+            font-weight: 600
+        }
+
+        nav a.active {
+            color: #fff
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 24px;
+            align-items: center;
+            margin-top: 28px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6)
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 28px
+        }
+
+        p.lead {
+            color: var(--muted);
+            margin: 0 0 12px
+        }
+
+        .cta {
+            display: flex;
+            gap: 8px
+        }
+
+        .btn {
+            background: var(--accent);
+            color: #04202a;
+            padding: 10px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700
+        }
+
+        .btn.ghost {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            color: var(--muted)
+        }
+
+        .profile-compact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(6, 182, 212, 0.6);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.4), 0 0 25px rgba(6, 182, 212, 0.2);
+        }
+
+        section {
+            margin-top: 22px
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px
+        }
+
+        .project {
+            padding: 14px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent)
+        }
+
+        .meta {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .blog-list,
+        .testimonials-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px
+        }
+
+        .testimonial {
+            padding: 14px;
+            border-radius: 10px;
+            background: var(--glass)
+        }
+
+        footer {
+            margin-top: 40px;
+            color: var(--muted);
+            text-align: center;
+            padding: 20px
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+
+        .chip {
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.02)
+        }
+
+        @media (max-width:900px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-3 {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">EA</div>
+                <div>
+                    <div style="font-weight:800">Ibrahim Atiku Halliru</div>
+                    <div style="color:var(--muted);font-size:13px">aka Ebraheemlinks — Web developer & AI enthusiast
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a href="#home" class="active" onclick="navigate(event,'home')">Home</a>
+                <a href="#about" onclick="navigate(event,'about')">About</a>
+                <a href="#projects" onclick="navigate(event,'projects')">Projects</a>
+                <a href="#blog" onclick="navigate(event,'blog')">Blog</a>
+                <a href="#testimonials" onclick="navigate(event,'testimonials')">Testimonials</a>
+                <a href="#services" onclick="navigate(event,'services')">Services</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="card">
+                    <h1>Hi, I’m Ibrahim (Ebraheemlinks)</h1>
+                    <p class="lead">I build clean, responsive websites and explore AI tools to make apps smarter. I
+                        specialize in web design, writing, app design and technology consulting.</p>
+                    <div class="cta">
+                        <a class="btn" href="#projects" onclick="navigate(event,'projects')">See Projects</a>
+                        <a class="btn ghost" href="#contact" onclick="navigate(event,'contact')">Contact</a>
+                    </div>
+                </div>
+                <aside class="card profile-compact">
+                    <img src="profile.png" alt="Ibrahim Atiku Halliru" class="avatar">
+                    <div style="margin-top:8px;font-weight:700">Ibrahim Atiku Halliru</div>
+                    <div style="color:var(--muted);font-size:13px">Web developer • AI enthusiast</div>
+                    <div style="margin-top:12px;display:flex;gap:8px">
+                        <a class="btn" href="#contact" onclick="navigate(event,'contact')">Message</a>
+                        <a class="btn ghost" href="#about" onclick="navigate(event,'about')">More</a>
+                    </div>
+                </aside>
+            </section>
+
+            <section id="about" class="card">
+                <h2>About Me</h2>
+                <p>I am <strong>Ibrahim Atiku Halliru</strong>, also known as <strong>Ebraheemlinks</strong>. I am a web
+                    developer and AI enthusiast. I enjoy building interfaces, exploring AI-assisted workflows, and
+                    helping people turn ideas into real products.</p>
+                <p class="meta">Location: Nigeria • Availability: Open for freelance & collaboration</p>
+            </section>
+
+            <section id="projects" class="card">
+                <h2>Projects / Portfolio</h2>
+                <div class="grid-3" style="margin-top:12px">
+                    <div class="project">
+                        <h3>Ecommerce Lite</h3>
+                        <p class="meta">A lightweight online shop template with cart and CMS-ready content.</p>
+                    </div>
+                    <div class="project">
+                        <h3>AI ChatAssist</h3>
+                        <p class="meta">A small web app prototype that uses an AI assistant to help visitors find
+                            content and answer FAQs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" class="card">
+                <h2>Blog / Updates</h2>
+                <article class="card">
+                    <h3>Day 1 — Launching the new site</h3>
+                    <p class="meta">Oct 28, 2025 · 5 min read</p>
+                    <p>I launched a refreshed personal site to showcase projects and experiments with AI.</p>
+                </article>
+            </section>
+
+            <section id="testimonials" class="card">
+                <h2>Testimonials</h2>
+                <div class="testimonials-list">
+                    <div class="testimonial">
+                        <strong>"Ibrahim delivered a sharp, responsive website that boosted our conversions."</strong>
+                        <div class="meta">— Aisha Bello</div>
+                    </div>
+                    <div class="testimonial">
+                        <strong>"Ebraheemlinks helped us prototype an AI chat assistant in days."</strong>
+                        <div class="meta">— Musa Ahmed</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="card">
+                <h2>Services</h2>
+                <div class="services">
+                    <div class="chip">Web design</div>
+                    <div class="chip">Writing</div>
+                    <div class="chip">App design</div>
+                    <div class="chip">Consulting</div>
+                </div>
+            </section>
+
+            <section id="contact" class="card">
+                <h2>Contact</h2>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+                    <a class="btn" href="https://wa.me/2349035686092" target="_blank">Message on WhatsApp</a>
+                    <a class="btn ghost" href="mailto:ebraheemlinks@gmail.com">Send an email</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © <span id="year"></span> Ibrahim Atiku Halliru — Ebraheemlinks
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        function navigate(e, id) { e.preventDefault(); document.querySelectorAll('nav a').forEach(a => a.classList.remove('active')); const link = document.querySelector('nav a[href="#' + id + '"]'); if (link) link.classList.add('active'); document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    </script>
+</body>
+
+</html>
