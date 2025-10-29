@@ -238,10 +238,12 @@
             </section>
 
             <section id="about" class="card">
-                <h2>About Me</h2>
-                <p>I am <strong>Ibrahim Atiku Halliru</strong>, also known as <strong>Ebraheemlinks</strong>. I am a web
-                    developer and AI enthusiast. I enjoy building interfaces, exploring AI-assisted workflows, and
-                    helping people turn ideas into real products.</p>
+                <section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I’m Ebraheem, a front-end web developer who loves creating clean, responsive, and creative websites. 
+     I enjoy learning new technologies and improving my design skills every day.</p>
+</section>
+
                 <p class="meta">Location: Nigeria • Availability: Open for freelance & collaboration</p>
             </section>
 
@@ -312,5 +314,6 @@
         function navigate(e, id) { e.preventDefault(); document.querySelectorAll('nav a').forEach(a => a.classList.remove('active')); const link = document.querySelector('nav a[href="#' + id + '"]'); if (link) link.classList.add('active'); document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     </script>
 </body>
+
 
 </html>
